@@ -1,0 +1,150 @@
+extends layout
+
+block additional-styles
+  style(type='text/css')
+    h2 {
+      clear: both;
+    }
+
+    .tech-list {
+      margin: 10px 0 10px 10px;
+    }
+    .tech-list li {
+      list-style: none;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 20px;
+      line-height: 1.4;
+
+    }
+
+block sidebar
+  img(src='/static/img/tinynodes-v1.png')
+
+  ul
+    li
+      a(href='http://zerp.ly/tanepiper') Zerply
+    li
+      a(href='http://twitter.com/tanepiper') Twitter
+    li
+      a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#97;&#110;&#101;&#64;&#116;&#105;&#110;&#121;&#110;&#111;&#100;&#101;&#115;&#46;&#99;&#111;&#109;') Email
+
+block content
+  h1 We Love Tinynodes
+
+  p
+    | Traditional web application development on any scale can lead to an array of
+    | problems leading to large code bases that become harder to debug, maintain and
+    | improve over time.
+  p
+    | At Tinynodes it's all about building applications using
+    | smaller, discrete bits of functionality - every part of the system is designed as
+    | it's own service that isn't tied to any specific part of the system.
+  p
+    | Web front-ends don't need to be tied to the database - they can instead call
+    | RESTful or websocket based services that can live anywhere in the network and
+    | make requests to obtain data - your own, or from third-party services.
+
+  h2 A Different Development Methodoligy
+
+  p
+    | Tinynodes is the application development and consultancy services of&nbsp;
+    a(href='http://zerp.ly/tanepiper', title='My Zerply Profile') Tane Piper
+
+  p
+    | I take a different approach to developing web applications - instead of the
+    | 'kitchen sink' approach of putting everything into one code base,
+    | your application is developed with individual components in mind that can
+    | speak to each other - be it on local machines, or over the internet.
+
+  p
+    | These components are re-usable and can run as one-or-many instances. For example
+    | you may have an application that reads and writes to twitter - my approach would
+    | be to have an application for each, sharing a common code base and OAuth library -
+    | this means it's much easier to maintain
+    | and update each one, without affecting other parts of the application.
+
+  p
+    | I provide consultancy services and&nbsp;
+    a(href='http://en.wikipedia.org/wiki/DevOps', target='_new') devops
+    |&nbsp;services, building applications
+    | using the latest technology and platforms built for the web.
+
+  p
+    | Many of the technology available today can be confusing, and to make sure
+    | you choose the right one for your app we'll investigate what would be the
+    | best fit
+
+  ul(class='tech-list')
+    li
+      a(href='http://nodejs.org', target='_new') NodeJS
+    li
+      a(href='http://mongodb.org', target='_new') MongoDB
+    li
+      a(href='http://couchdb.apache.org/', target='_new') CouchDB
+    li
+      a(href='http://www.postgresql.org/', target='_new') Postgres
+    li
+      a(href='http://smartos.org/', target='_new') SmartOS
+    li
+      a(href='http://www.ubuntu.com/', target='_new') Ubuntu
+    li
+      a(href='http://aws.amazon.com/', target='_new') Amazon Web Services
+    li
+      a(href='http://www.joyent.com/products/joyent-cloud/', target='_new') Joyent Cloud
+    li
+      a(href='http://www.linode.com/?r=a4d017eebd9efffe7d7c38b6823a824dd4206e51', target='_new') Linode
+
+  h2 Presenting to the user
+
+  p
+    | There are more client side libraries that provide a wide range of functionalty
+    | than ever before - and work, or don't work, on a range of browsers.
+    | It can be confusing to find the right one that fits your needs.
+
+  p
+    | Let Tinynodes take the pain out of creating feature rich client side applications
+    | by helping you select the right tools for the job.
+
+  ul(class='tech-list')
+    li
+      a(href='http://jquery.org', target='_new') jQuery
+    li
+      a(href='http://backbonejs.org/', target='_new') BackboneJS
+    li
+      a(href='http://emberjs.com/', target='_new') EmberJS
+    li
+      a(href='http://zeptojs.com/', target='_new') ZeptoJS
+    li
+      a(href='http://d3js.org/', target='_new') D3
+    li
+      a(href='http://www.html5rocks.com/', target='_new') HTML5
+    li
+      a(href='http://www.css3.info/', target='_new') CSS3
+    li
+      a(href='http://www.ecmascript.org/', target='_new') ECMAScript 5 &amp; 6 (JavaScript)
+
+  h2 Working together with trust and respect
+
+  p
+    | I am open and up-front about working with my clients, and their needs - constant
+    | and clear communication is key to any successful project - especially with remote
+    | working.
+
+  p
+    | I do not take on fixed-price projects unless they meet a minimum requirement - I, and
+    | many developers like me have been burned in the past with this - and it's one of the
+    | major areas that can cause tension and burn-out between client and developer.
+
+  p
+    | Projects are not taken on without a minimum specification - a client can certainly welcome to approach me
+    | with a vauge idea in their head about what they need - but without working together to
+    | clearly define project goals, many projects will have a lot of friction and tend to fail.
+
+  p
+    | I do not sign NDAs - an NDA is a sign of a lack of, or broken trust between parties.
+
+  p
+    | If you would be interested in using my services for consultancy or development then&nbsp;
+    a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#97;&#110;&#101;&#64;&#116;&#105;&#110;&#121;&#110;&#111;&#100;&#101;&#115;&#46;&#99;&#111;&#109;') drop me an email
+    |&nbsp and lets get the ball rolling!

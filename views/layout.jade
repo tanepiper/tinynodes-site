@@ -1,0 +1,39 @@
+!!! 5
+html
+  head
+    title JavaScript &amp; nodejs consultancy and app development | Tinynodes
+
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    link(rel='stylesheet', type='text/css', href='/static/css/bootstrap.min.css');
+    link(rel='stylesheet', type='text/css', href='/static/css/bootstrap-responsive.min.css');
+
+    block additional-styles
+
+  body
+
+    .container-fluid
+      .row-fluid
+        .span2
+          block sidebar
+
+        .span10
+          block content
+
+      .row-fluid
+        .footer
+          .container-fluid
+            | Copyright &copy; 2012&nbsp;
+            a(href="http://tinynodes.com") Tinynodes
+            |&nbsp;-&nbsp;
+            | Built With
+            ||&nbsp;
+            a(href="http://nodejs.org") nodejs
+            |&nbsp;|&nbsp;
+            a(href="http://expressjs.com") expressjs
+            |&nbsp;|&nbsp;
+            a(href="http://getbootstrap.com") bootstrap
+
+    block scripts
+      script(src='http://code.jquery.com/jquery.min.js')
+      script(src='/static/js/bootstrap.min.js')
