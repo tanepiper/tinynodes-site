@@ -8,6 +8,22 @@ html
     link(rel='stylesheet', type='text/css', href='/static/css/bootstrap.min.css');
     link(rel='stylesheet', type='text/css', href='/static/css/bootstrap-responsive.min.css');
 
+    style(type='text/css')
+      body {
+        background: -moz-linear-gradient(top,  rgba(234,234,234,0.65) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,234,234,0.65)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(234,234,234,0.65) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(234,234,234,0.65) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(234,234,234,0.65) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(234,234,234,0.65) 0%,rgba(255,255,255,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6eaeaea', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+      }
+      footer {
+        padding-top: 15px;
+      }
+
     block additional-styles
 
   body
@@ -21,7 +37,7 @@ html
           block content
 
       .row-fluid
-        .footer
+        footer
           .container-fluid
             | Copyright &copy; 2012&nbsp;
             a(href="http://tinynodes.com") Tinynodes
